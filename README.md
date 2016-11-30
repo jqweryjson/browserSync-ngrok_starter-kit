@@ -40,8 +40,8 @@ var config = {
     port: 8080,
     directoryListing: true,
     logPrefix: ''
-};
-
+};</pre>
+<pre>
 gulp.task('webserver', function () {
     browserSync(config, function (err, bs) {
        ngrok.connect({
