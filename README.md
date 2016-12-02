@@ -6,7 +6,7 @@ browserSync,ngrok,gulp
 
 <h2>Итак поехали:</h2>
 
-1. Качаем главного героя,сервер ngrok<br>
+1. Качаем сервер ngrok<br>
 https://ngrok.com/download<br>
 По ссылке сам сервер.
 <br>
@@ -28,12 +28,12 @@ https://ngrok.com/download<br>
 <code>npm install -g browser-sync --save-dev</code><br>
 6.Пропишем в gulp файл необходимые конфиги:<br>
 <code><pre>var   ngrok = require('ngrok'), 
-            gulp = require('gulp'),
-            browserSync = require('browser-sync'),
-            gutil = require('gutil');
+                 gulp = require('gulp'),
+                 browserSync = require('browser-sync'),
+                 gutil = require('gutil');
 var config = {
     server: {
-        baseDir: "assets"
+        baseDir: "assets"//укажем дирректорию где лежит index.html
     },
     //tunnel: true,
     host: 'localhost',
