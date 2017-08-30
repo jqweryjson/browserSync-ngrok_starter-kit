@@ -51,9 +51,11 @@ gulp.task('webserver', function () {
                 gutil.log('[ngrok]', 'start on port',port);
             });         
     });         
-});<pre></code><br>
+});</pre></code>
+
 7. Запускаем<br>
 <code>ngrok http 8080</code><br>
 Затем. <code>gulp webserver</code><br>
 ngrok вернет в терминале внешний адресс что то типа <code>http://fbg678.ngrok.io</code><br>
 Готово!теперь можно транслировать свой фронт на внешний адрес.
+
